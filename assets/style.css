@@ -14,12 +14,103 @@ body {
 
 #container {
   width: 1300px;
-  padding: 2rem;
-  background-color: #1D154A;
+  padding: 3rem 8rem;
+  background-color: #1d154a;
   margin: 5% 0;
   border-radius: 15px;
   -webkit-box-shadow: 10px 10px 46px 14px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 10px 10px 46px 14px rgba(0, 0, 0, 0.25);
   box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.25);
   color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > img {
+  width: 10%;
+}
+
+nav > button {
+  color: #1d154a;
+  padding: 0 2rem;
+  height: 3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #ffe145;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-content > img,
+.main-content > div {
+  width: 45%;
+  margin: 10% 0 10% 0;
+}
+
+.main-content > div > h1 {
+  font-size: 70px;
+  margin-bottom: 2rem;
+}
+
+.main-content > div > p {
+  font-size: 24px;
+  color: lightgray;
+}
+
+#newsletter {
+  margin-top: 2rem;
+  display: flex;
+}
+
+#newsletter-email {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  color: lightgray;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid black;
+}
+
+#newsletter-button {
+  cursor: pointer;
+  background-color: #ffe145;
+  font-weight: bold;
+  font-size: 1rem;
+  height: 2.5rem;
+  padding: 0 2rem;
+  border-radius: 0 5px 5px 0;
+  color: #1d154a;
+  text-transform: uppercase;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer > div > img {
+  width: 20%;
+}
+
+footer > a {
+  margin-top: 2rem;
+  text-decoration: none;
+  color: lightgray;
+  font-size: 12px;
 }
