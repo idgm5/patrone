@@ -67,12 +67,17 @@ nav > button {
   color: lightgray;
 }
 
-#newsletter {
+#mc_embed_signup_scroll {
+  display: flex;
+  align-items: center;
+}
+
+#mc-embedded-subscribe-form {
   margin-top: 2rem;
   display: flex;
 }
 
-#newsletter-email {
+#mce-EMAIL {
   padding: 0.5rem 2rem;
   font-size: 1rem;
   color: lightgray;
@@ -80,7 +85,7 @@ nav > button {
   border: 1px solid black;
 }
 
-#newsletter-button {
+#mc-embedded-subscribe {
   cursor: pointer;
   background-color: #ffe145;
   font-weight: bold;
@@ -170,18 +175,19 @@ footer > a {
     width: 70%;
   }
 
-  #newsletter {
+  #mc-embedded-subscribe-form {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
   }
 
-  #newsletter-email {
+  #mce-EMAIL {
     text-align: center;
+    width: 90%;
   }
 
-  #newsletter-email,
-  #newsletter-button {
+  #mce-EMAIL,
+  #mc-embedded-subscribe {
     padding: 0.5rem;
     border-radius: 0;
   }
@@ -195,4 +201,16 @@ footer > a {
     font-size: 20px;
     margin-bottom: 2rem;
   }
+
+  #mc_embed_signup_scroll {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mc-field-group {
+    width: 100%;
+  }
+
 }
