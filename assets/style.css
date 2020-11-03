@@ -114,3 +114,85 @@ footer > a {
   color: lightgray;
   font-size: 12px;
 }
+
+/* Mobile portrait & landscape screens */
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  #container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .main-content {
+    flex-direction: column-reverse;
+  }
+
+  nav,
+  footer > div {
+    flex-direction: column;
+  }
+
+  .main-content {
+    padding: 0 0.8rem;
+  }
+
+  .main-content > img,
+  .main-content > div {
+    width: 100%;
+  }
+
+  nav > img {
+    width: 30%;
+    margin-bottom: 2rem;
+  }
+
+  nav > button {
+    font-size: 14px;
+    padding: 0 3rem;
+    height: 2.5rem;
+  }
+
+  .main-content > div > h1 {
+    font-size: 30px;
+    margin-bottom: 2rem;
+  }
+  .main-content > div > p {
+    font-size: 24px;
+  }
+
+  #terms {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+  }
+
+  .main-content > img {
+    width: 70%;
+  }
+
+  #newsletter {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #newsletter-email {
+    text-align: center;
+  }
+
+  #newsletter-email,
+  #newsletter-button {
+    padding: 0.5rem;
+    border-radius: 0;
+  }
+
+  footer > div > img {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+
+  footer > a {
+    font-size: 20px;
+    margin-bottom: 2rem;
+  }
+}
